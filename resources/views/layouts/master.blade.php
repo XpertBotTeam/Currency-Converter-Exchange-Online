@@ -27,32 +27,32 @@
 </head>
 <body>
 <center>
-    <nav class="navbar navbar-expand-lg bg-black" style="padding-left: 30px">
+    <nav class="navbar navbar-expand-lg bg-black" style="padding-left: 50px;">
       
       <div class="container-fluid">
-        <a style="padding-top: 50px; padding-left: 500px"
+        <a style="padding-top: 50px; padding-left: 470px"
         class="navbar-brand" href="/">
-        <b><em>Currency-Exchange</em></b>
+        <b style="padding-top: 10px"><u><em>Currency-Exchange</em></u></b>
         </a>
           <div>
             <ul class="navbar-nav" style="padding: 50px">
               <li class="nav-item" style="padding: 30px">
-                <a class="nav-link active" aria-current="page" href="/Home">Over-View</a>
+                <a class="nav-link active" aria-current="page" href="/Home"><u>Over-View</u></a>
               </li>
               <li class="nav-item"style="padding: 30px">
-                <a class="nav-link" href="/Crypto">Crypto Online Values</a>
+                <a class="nav-link" href="/Crypto"><u>Crypto Online Values</u></a>
               </li>
               <li class="nav-item"style="padding: 30px">
-                <a class="nav-link" href="/ConverterAPP">Converter-APP</a>
+                <a class="nav-link" href="/ConverterAPP"><u>Converter-APP</u></a>
               </li>
               <li class="nav-item"style="padding: 30px">
-                <a class="nav-link" href="/LineChart">Crypto-Line-Chart</a>
+                <a class="nav-link" href="/LineChart"><u>Crypto-Line-Chart</u></a>
               </li>
               <li class="nav-item"style="padding: 30px">
-                <a class="nav-link" href="/Goldview">Gold-Price</a>
+                <a class="nav-link" href="/Goldview"><u>Gold-Price</u></a>
               </li>
               <li class="nav-item"style="padding: 30px">
-                <a class="nav-link" href="/contact">Contact US</a>
+                <a class="nav-link" href="/contact"><u>Contact US</u></a>
               </li>
             </ul>
           </div>
