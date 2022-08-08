@@ -4,7 +4,7 @@
 
 
 <section style="padding-bottom: 90px; padding-bottom: 100px;">
-   <h2 style="padding-top: 68px; color:darkturquoise;"><u style="color: darkturquoise;">@walidkinaan</u></h2>
+   <h2 style="padding-top: 68px; color:darkturquoise;"><a target="blank" href="https://github.com/waledoss"><u style="color: darkturquoise;">@walidkinaan</u></a></h2>
  <span>
  <div class="row social" align="center">
    <a target = "blank" href = 'https://www.twitch.tv/settings/profile'><i class="fab fa-twitch"></i></a>

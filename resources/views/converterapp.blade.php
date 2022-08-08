@@ -36,7 +36,7 @@
               </form>
             </div>
         
-     <script src="/js/country-list.js"></script>
+    <script src="/js/country-list.js"></script>
     <script src="/js/script.js"></script>
         
           </section>
