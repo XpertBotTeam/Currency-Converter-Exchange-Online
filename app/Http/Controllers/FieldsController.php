@@ -14,7 +14,7 @@ class FieldsController extends Controller
    */
   public function index()
   {
-    
+    return view('contact');
   }
 
   /**
@@ -45,7 +45,7 @@ class FieldsController extends Controller
    */
   public function show($id)
   {
-    
+    return view('contact');
   }
 
   /**
@@ -67,7 +67,7 @@ class FieldsController extends Controller
    */
   public function update($id)
   {
-    
+    return view('contact');
   }
 
   /**

@@ -14,7 +14,7 @@ class GoldviewController extends Controller
    */
   public function index()
   {
-    
+    return view('Goldview');
   }
 
   /**
@@ -45,7 +45,7 @@ class GoldviewController extends Controller
    */
   public function show($id)
   {
-    
+    return view('Goldview');
   }
 
   /**

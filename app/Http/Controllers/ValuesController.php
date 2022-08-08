@@ -14,7 +14,7 @@ class ValuesController extends Controller
    */
   public function index()
   {
-    
+    return view('Welcome');
   }
 
   /**
@@ -67,7 +67,9 @@ class ValuesController extends Controller
    */
   public function update($id)
   {
-    
+    return view('Goldview');
+    return view('Crypto');
+    return view('coverterapp');
   }
 
   /**

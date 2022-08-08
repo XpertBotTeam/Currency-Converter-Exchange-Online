@@ -24,7 +24,7 @@ class ChartController extends Controller
    */
   public function create()
   {
-    
+    return view('index');
   }
 
   /**
@@ -45,7 +45,7 @@ class ChartController extends Controller
    */
   public function show($id)
   {
-    
+    return view('Crypto');
   }
 
   /**

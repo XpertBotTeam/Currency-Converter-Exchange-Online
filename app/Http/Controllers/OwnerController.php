@@ -14,7 +14,7 @@ class OwnerController extends Controller
    */
   public function index()
   {
-    
+    return view('authentication');
   }
 
   /**
@@ -45,7 +45,7 @@ class OwnerController extends Controller
    */
   public function show($id)
   {
-    
+    return view('authentication');
   }
 
   /**
@@ -67,7 +67,7 @@ class OwnerController extends Controller
    */
   public function update($id)
   {
-    
+    return view('authentication');
   }
 
   /**

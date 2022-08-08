@@ -14,7 +14,7 @@ class CurrencyExchangeController extends Controller
    */
   public function index()
   {
-    
+    return view('coverterapp');
   }
 
   /**
@@ -45,7 +45,7 @@ class CurrencyExchangeController extends Controller
    */
   public function show($id)
   {
-    
+    return view('converterapp');
   }
 
   /**

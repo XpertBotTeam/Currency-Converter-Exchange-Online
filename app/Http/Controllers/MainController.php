@@ -14,7 +14,7 @@ class MainController extends Controller
    */
   public function index()
   {
-    
+    return view('index');
   }
 
   /**
@@ -24,7 +24,7 @@ class MainController extends Controller
    */
   public function create()
   {
-    
+    return view('ValuesController');
   }
 
   /**
@@ -45,7 +45,8 @@ class MainController extends Controller
    */
   public function show($id)
   {
-    
+    return view('Crypto');
+    return view('converterapp');
   }
 
   /**
@@ -67,7 +68,10 @@ class MainController extends Controller
    */
   public function update($id)
   {
-    
+    return view('Goldview');
+    return view('converterapp');
+    return view('Crypto');
+    return view('LineChart');
   }
 
   /**
