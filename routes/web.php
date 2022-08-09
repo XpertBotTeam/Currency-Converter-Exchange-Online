@@ -31,6 +31,9 @@ return view ('index');
 Route::get('/auth', function(){
     return view ('authentication');
 });
+Route::get('/checkform', function(){
+    return view ('checkform');
+});
 Route::get('/Crypto', function(){
     return view ('Crypto');
 });

@@ -7,11 +7,11 @@
     --border-radius: 4px;
     
     margin: 0;
-    height: 115vh;
+    height: 110vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
+    font-size: 14px;
     background: url(./background.jpg);
     background-size: cover;
 }
@@ -23,13 +23,13 @@
     padding: 2rem;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
     border-radius: var(--border-radius);
-    background: #ffffff;
+    background: rgb(191, 186, 186);
 }
 
 .containerlogin,
 .form__input,
 .form__button {
-    font: 500 1rem 'Quicksand', sans-serif;
+    font: 600 1rem 'Quicksand', sans-serif;
 }
 
 .form--hidden {

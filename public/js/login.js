@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Perform your AJAX/Fetch login
 
-        setFormMessage(loginForm, "error", "Invalid username/ incorrect password");
+        setFormMessage(loginForm, "error", "Invalid username / incorrect password");
     });
 
     document.querySelectorAll(".form__input").forEach(inputElement => {

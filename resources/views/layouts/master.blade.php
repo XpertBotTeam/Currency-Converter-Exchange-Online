@@ -33,7 +33,7 @@
     <!--   -->
 </head>
 <body>
-<section id= "dash">
+<section>
 <center>
     <nav class="navbar navbar-expand-lg bg-black" style="padding-left: 50px;">
       
@@ -47,35 +47,28 @@
         </a>
 
           <div>
-            <ul class="navbar-nav" style="padding: 10px">
+            <ul class="navbar-nav" style="padding: 10px;padding-top:40px">
 
-              <li class="nav-item" style="padding: 20px">
-                <a class="nav-link active" aria-current="page" href="/auth"><u> SignUp/Login</u></a>
-              </li>
-              <li class="nav-item" style="padding: 20px">
-                <a class="nav-link active" aria-current="page" href="/home"><u>Dashboard- Overview</u></a>
-              </li>
-              <li class="nav-item"style="padding: 20px">
-                <a class="nav-link" href="/Crypto"><u>Crypto Online Values</u></a>
-              </li>
-              <li class="nav-item"style="padding: 20px">
-                <a class="nav-link" href="/ConverterAPP"><u>Converter-APP</u></a>
-              </li>
-              <li class="nav-item"style="padding: 20px">
-                <a class="nav-link" href="/LineChart"><u>Crypto-Line-Chart</u></a>
-              </li>
-              <li class="nav-item"style="padding: 20px">
-                <a class="nav-link" href="/Goldview"><u>Gold-Price</u></a>
-              </li>
-              <li class="nav-item"style="padding: 20px">
-                <a class="nav-link" href="/contact"><u>Contact US</u></a>
-              </li>
+              <center>
+                <a style="padding-left: 30px;" class="nav-link active" aria-current="page" href="/auth"><u> SignUp/Login</u></a>
+             
+                <a style="padding-left: 30px" class="nav-link active" aria-current="page" href="/home"><u>Dashboard- Overview</u></a>
+              
+                <a style="padding-left: 30px;" class="nav-link" href="/Crypto"><u>Crypto Online Values</u></a>
+              
+                <a style="padding-left: 30px" class="nav-link" href="/ConverterAPP"><u>Converter-APP</u></a>
+              
+                <a style="padding-left: 30px" class="nav-link" href="/LineChart"><u>Crypto-Line-Chart</u></a>
+              
+                <a style="padding-left: 30px" class="nav-link" href="/Goldview"><u>Gold-Price</u></a>
+              
+                <a style="padding-left: 30px" class="nav-link" href="/contact"><u>Contact US</u></a>
+              </center>
 
             </ul>
           </div>
       </div>
     </nav>
-  
 @yield('content')
 
 

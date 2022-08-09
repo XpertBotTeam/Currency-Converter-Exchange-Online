@@ -12,19 +12,19 @@
 <body id="specfic">
     <div class="containerlogin">
         <form class="form" id="login">
-            <h1 class="form__title">Login</h1>
+            <h1 class="form__title"><u>Login <small>to</small> stay Focused!</u></h1>
             <div class="form__message form__message--error"></div>
             <div class="form__input-group">
-                <input type="text" class="form__input" autofocus placeholder="Username or email">
+                <input type="text" class="form__input" autofocus placeholder="Username or Email">
                 <div class="form__input-error-message"></div>
             </div>
             <div class="form__input-group">
                 <input type="password" class="form__input" autofocus placeholder="Password">
                 <div class="form__input-error-message"></div>
             </div>
-            <button class="form__button" type="submit">Continue</button>
+            <button class="form__button" type="submit"><a href="#">Continue</a></button>
             <p class="form__text">
-                <a href="#" class="form__link">Forgot your password?</a>
+                <a href="./checkform" class="form__link">Forgot/Reset your password?</a>
             </p>
             <p class="form__text">
                 <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
@@ -54,7 +54,10 @@
                 <a class="form__link" href="./" id="linkLogin">Already have an account? Sign in</a>
             </p>
         </form>
+          
     </div>
+    <a style="font-size: 17px;color:rgb(235, 18, 50);" class="pull-right" href="/contact">IF THERE ANY PROBLEM, PRESS HERE!</a>
     <script src="/js/login.js"></script>
+    <script src="/js/checkform.js"></script>
 </body>
 @endsection

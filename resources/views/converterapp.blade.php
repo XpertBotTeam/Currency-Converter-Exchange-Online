@@ -3,7 +3,7 @@
 @section('content')
 
 
-    <body style="padding-top: 50px;">
+    <body style="padding-top: 0px;">
         <section id="section">
             <div class="wrapper">
               <header>Currency Converter</header>
