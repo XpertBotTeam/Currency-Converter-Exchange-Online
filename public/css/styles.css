@@ -303,21 +303,21 @@
   }
 
 
-#dash .items li:nth-child(1){
-    border-left: 4px solid rgb(182, 26, 26);
-}
-#dash .items li:nth-child(2){
-    border-left: 4px solid rgb(28, 30, 153);
-}
-#dash .items li:nth-child(3){
+.navbar-nav.nav-item li:nth-child(3){
     border-left: 4px solid rgb(188, 10, 117);
 }
-#dash .items li:nth-child(4){
-    border-left: 4px solid rgb(152, 163, 55);
+.navbar-nav.nav-item li:nth-child(3){
+  border-left: 4px solid rgb(188, 10, 117);
 }
-#dash .items li:nth-child(5){
-    border-left: 4px solid rgb(78, 153, 28);
+.navbar-nav.nav-item li:nth-child(3){
+    border-left: 4px solid rgb(188, 10, 117);
 }
-#dash .items li:nth-child(6){
-    border-left: 4px solid rgb(28, 30, 153);
+.navbar-nav.nav-item li:nth-child(3){
+  border-left: 4px solid rgb(188, 10, 117);
+}
+.navbar-nav.nav-item li:nth-child(3){
+  border-left: 4px solid rgb(188, 10, 117);
+}
+.navbar-nav.nav-item li:nth-child(3){
+  border-left: 4px solid rgb(188, 10, 117);
 }

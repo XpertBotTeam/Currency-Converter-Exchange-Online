@@ -17,6 +17,6 @@
  
  </span>
  </section>
-
+<script src="/js/helpful.js"></script>
 
 @endsection

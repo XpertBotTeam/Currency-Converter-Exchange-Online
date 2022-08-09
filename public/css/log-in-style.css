@@ -1,13 +1,13 @@
-body {
+#specfic {
     --color-primary: #22f5e0;
     --color-primary-dark: #5ee7ce;
     --color-secondary: #252c6a;
     --color-error: #cc3333;
     --color-success: #4bb544;
     --border-radius: 4px;
-
+    
     margin: 0;
-    height: 100vh;
+    height: 115vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,7 +16,7 @@ body {
     background-size: cover;
 }
 
-.container {
+.containerlogin {
     width: 400px;
     max-width: 400px;
     margin: 1rem;
@@ -26,7 +26,7 @@ body {
     background: #ffffff;
 }
 
-.container,
+.containerlogin,
 .form__input,
 .form__button {
     font: 500 1rem 'Quicksand', sans-serif;
@@ -116,6 +116,7 @@ body {
 }
 
 .form__text {
+    padding-top: 10px;
     text-align: center;
 }
 

@@ -41,16 +41,16 @@
         
         <a style=" margin-left: -88%;"href="/contact"><img  class id="img" src="https://img.freepik.com/premium-photo/blockchain-market-usd-currency-concept-with-blue-glowing-digital-dollar-symbol-abstract-technological-backdrop-with-world-map-waving-lines-3d-rendering_670147-524.jpg?size=626&ext=jpg"width="96"height="65"> 
         </a>
-        <a style="padding-bottom: 20px; padding-left: 470px"
+        <a style="padding-bottom: 20px; padding-left: 500px"
         class="navbar-brand" href="/">
-        <b style="padding-bottom: 10px"><u style="border-bottom: 3px double"><em>Currency-Exchange</em></u></b>
+        <b style="padding-top: 5px"><u style="border-bottom: 3px double"><em>Currency-Exchange</em></u></b>
         </a>
 
           <div>
             <ul class="navbar-nav" style="padding: 10px">
 
               <li class="nav-item" style="padding: 20px">
-                <a class="nav-link active" aria-current="page" href="/auth"><u>authenication SignUp/Login</u></a>
+                <a class="nav-link active" aria-current="page" href="/auth"><u> SignUp/Login</u></a>
               </li>
               <li class="nav-item" style="padding: 20px">
                 <a class="nav-link active" aria-current="page" href="/home"><u>Dashboard- Overview</u></a>

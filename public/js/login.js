@@ -1,3 +1,5 @@
+alert("log in, and Stay Tuned!");
+
 function setFormMessage(formElement, type, message) {
     const messageElement = formElement.querySelector(".form__message");
 
