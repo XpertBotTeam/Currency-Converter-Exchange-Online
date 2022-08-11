@@ -27,6 +27,9 @@
                 <a href="./checkform" class="form__link">Forgot/Reset your password?</a>
             </p>
             <p class="form__text">
+                <a class="form__link" href="/contact"> CAN'T SIGN IN?</a>
+            </p>
+            <p class="form__text">
                 <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
             </p>
         </form>
@@ -56,7 +59,6 @@
         </form>
           
     </div>
-    <a style="font-size: 17px;color:rgb(235, 18, 50);" class="pull-right" href="/contact">IF THERE ANY PROBLEM, PRESS HERE!</a>
     <script src="/js/login.js"></script>
     <script src="/js/checkform.js"></script>
 </body>
