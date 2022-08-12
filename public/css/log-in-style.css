@@ -95,6 +95,7 @@
 }
 
 .form__button {
+    font-size: 18px;
     width: 100%;
     padding: 1rem 2rem;
     font-weight: bold;

@@ -49,6 +49,9 @@ Route::get('/Goldview', function(){
 Route::get('/contact', function(){
     return view ('contact');
 });
+Route::get('/GetInTouch', function(){
+    return view ('GetInTouch');
+});
 
 // Database migration
 /*

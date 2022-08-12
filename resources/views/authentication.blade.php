@@ -22,12 +22,12 @@
                 <input type="password" class="form__input" autofocus placeholder="Password">
                 <div class="form__input-error-message"></div>
             </div>
-            <button class="form__button" type="submit"><a href="#">Continue</a></button>
+            <button  class="form__button" type="submit"><a href="#">Continue</a></button>
             <p class="form__text">
                 <a href="./checkform" class="form__link">Forgot/Reset your password?</a>
             </p>
             <p class="form__text">
-                <a class="form__link" href="/contact"> CAN'T SIGN IN?</a>
+                <a class="form__link" href="/GetInTouch"> CAN'T SIGN IN?</a>
             </p>
             <p class="form__text">
                 <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
@@ -61,5 +61,6 @@
     </div>
     <script src="/js/login.js"></script>
     <script src="/js/checkform.js"></script>
+
 </body>
 @endsection
