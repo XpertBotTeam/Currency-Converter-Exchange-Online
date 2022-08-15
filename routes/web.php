@@ -21,15 +21,23 @@ use App\Http\Controllers\ValuesController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function(){
+    return view ('authentication');
+});
+Route::get('/register', function(){
+    return view ('register');
+});
+Route::get('/login', function(){
+    return view ('login');
+});
+Route::get('/home', function(){
+    return view ('home');
+});
+Route::get('/welcome', function(){
     return view ('Welcome');
 });
 Route::get('/home', function(){
 return view ('index');
-});
-Route::get('/auth', function(){
-    return view ('authentication');
 });
 Route::get('/checkform', function(){
     return view ('checkform');

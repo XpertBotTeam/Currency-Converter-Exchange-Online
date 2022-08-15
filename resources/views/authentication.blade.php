@@ -1,6 +1,3 @@
-@extends('layouts.master')
-@section('title','authentication')
-@section('content')
 <!DOCTYPE html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +6,15 @@
     <link rel="shortcut icon" href="/assets/favicon.ico">
     <link rel="stylesheet" href="/css/log-in-style.css">
 </head>
-<body id="specfic">
+<!--<div id = "div" class="container-fluid">   
+ <img style="clip-path: circle();margin-left: -88%;" src="https://img.freepik.com/premium-photo/blockchain-market-usd-currency-concept-with-blue-glowing-digital-dollar-symbol-abstract-technological-backdrop-with-world-map-waving-lines-3d-rendering_670147-524.jpg?size=626&ext=jpg"width="150"height="100"> 
+</div> -->
+<body id="div">
+    <center>
+        <section id="specfic">
     <div class="containerlogin">
         <form class="form" id="login">
-            <h1 class="form__title"><u>Login <small>to</small> stay Focused!</u></h1>
+            <h1 class="form__title"><small><em>Welcome To <u>Currency Exchange</u> App</em></small><br><u style="border-bottom: 3px double"><small>Login to stay Focused!</small> </u></h1>
             <div class="form__message form__message--error"></div>
             <div class="form__input-group">
                 <input type="text" class="form__input" autofocus placeholder="Username or Email">
@@ -22,7 +24,9 @@
                 <input type="password" class="form__input" autofocus placeholder="Password">
                 <div class="form__input-error-message"></div>
             </div>
-            <button  class="form__button" type="submit"><a href="#">Continue</a></button>
+            <center>
+            <button  class="form__button" type="submit"><a href="/welcome">Continue</a></button>
+            </center>
             <p class="form__text">
                 <a href="./checkform" class="form__link">Forgot/Reset your password?</a>
             </p>
@@ -61,6 +65,6 @@
     </div>
     <script src="/js/login.js"></script>
     <script src="/js/checkform.js"></script>
-
+        </section>
+    </center>
 </body>
-@endsection

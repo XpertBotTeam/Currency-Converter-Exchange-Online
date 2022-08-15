@@ -50,12 +50,12 @@
             <ul class="navbar-nav" style="padding: 10px;padding-top:40px">
 
               <center>
-                <a style="padding-left: 30px;" class="nav-link active" aria-current="page" href="/auth"><u> SignUp/Login</u></a>
+                <a style="padding-left: 30px;" class="nav-link active" aria-current="page" href="/"><u>Log-Out</u></a>
              
                 <a style="padding-left: 30px" class="nav-link active" aria-current="page" href="/home"><u>Dashboard- Overview</u></a>
               
                 <a style="padding-left: 30px;" class="nav-link" href="/Crypto"><u>Crypto Online Values</u></a>
-              
+
                 <a style="padding-left: 30px" class="nav-link" href="/ConverterAPP"><u>Converter-APP</u></a>
               
                 <a style="padding-left: 30px" class="nav-link" href="/LineChart"><u>Crypto-Line-Chart</u></a>

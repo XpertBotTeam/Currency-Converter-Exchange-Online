@@ -7,11 +7,11 @@
     --border-radius: 4px;
     
     margin: 0;
-    height: 110vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
+    font-size: 15px;
     background: url(./background.jpg);
     background-size: cover;
 }
@@ -96,7 +96,7 @@
 
 .form__button {
     font-size: 18px;
-    width: 100%;
+    width: 50%;
     padding: 1rem 2rem;
     font-weight: bold;
     font-size: 1.1rem;
@@ -129,4 +129,7 @@
 
 .form__link:hover {
     text-decoration: underline;
+}
+#div{
+    background-image: url("https://th.bing.com/th/id/R.70ddb26ca420bd2daec4bfe00db5dc51?rik=n02K%2b5cOcdVZ7w&pid=ImgRaw&r=0");
 }

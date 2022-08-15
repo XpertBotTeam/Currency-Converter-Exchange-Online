@@ -72,7 +72,7 @@
     
     <section style="padding-top: 50px;">
     <center>
-      <h1 style="color: blue; padding-bottom: 10px;"> The values of most used Crypto Currencies</h1>
+      <h1 style="color: blue; padding-bottom: 10px;"> The values of most interested Crypto Currencies</h1>
       </center>
       <center>
       <container class="container" style=" padding-bottom: 10px;">
