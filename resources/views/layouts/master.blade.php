@@ -18,13 +18,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="/css/styles.css"> 
     <link rel="stylesheet" href="/css/cryptostyle.css">  
-    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> -->
-    
 <!-- End of styling CSS -->
+
     <!-- For Gold -->
     <script type="text/javascript" src="https://www.bullionvault.com/banners/live_price_widget.js"></script>
     <!--   -->
-
     <script src="https://ok1static.oktacdn.com/assets/js/sdk/okta-signin-widget/2.16.0/js/okta-sign-in.min.js" type="text/javascript"></script>
     <link href="https://ok1static.oktacdn.com/assets/js/sdk/okta-signin-widget/2.16.0/css/okta-sign-in.min.css" type="text/css" rel="stylesheet"/>
     <link href="https://ok1static.oktacdn.com/assets/js/sdk/okta-signin-widget/2.16.0/css/okta-theme.css" type="text/css" rel="stylesheet"/>
@@ -42,7 +40,7 @@
         <a style=" margin-left: -88%;"href="/contact"><img  class id="img" src="https://img.freepik.com/premium-photo/blockchain-market-usd-currency-concept-with-blue-glowing-digital-dollar-symbol-abstract-technological-backdrop-with-world-map-waving-lines-3d-rendering_670147-524.jpg?size=626&ext=jpg"width="96"height="65"> 
         </a>
         <a style="padding-bottom: 20px; padding-left: 500px"
-        class="navbar-brand" href="/">
+        class="navbar-brand" href="/home">
         <b style="padding-top: 5px"><u style="border-bottom: 3px double"><em>Currency-Exchange</em></u></b>
         </a>
 
@@ -50,7 +48,7 @@
             <ul class="navbar-nav" style="padding: 10px;padding-top:40px">
 
               <center>
-                <a style="padding-left: 30px;" class="nav-link active" aria-current="page" href="/"><u>Log-Out</u></a>
+                <a style="padding-left: 30px;" class="nav-link active" aria-current="page" href="/"><u>Sign-Out</u></a>
              
                 <a style="padding-left: 30px" class="nav-link active" aria-current="page" href="/home"><u>Dashboard- Overview</u></a>
               

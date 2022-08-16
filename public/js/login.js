@@ -1,5 +1,3 @@
-alert("log in, and Stay Tuned!");
-
 function setFormMessage(formElement, type, message) {
     const messageElement = formElement.querySelector(".form__message");
 
@@ -36,15 +34,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     loginForm.addEventListener("submit", e => {
         e.preventDefault();
-        // Perform your AJAX/Fetch login
 
-        setFormMessage(loginForm, "error", "Something went wrong:Invalid username / incorrect password");
+        setFormMessage(loginForm, "error", "Invalid username/password matching");
     });
 
     document.querySelectorAll(".form__input").forEach(inputElement => {
         inputElement.addEventListener("blur", e => {
-            if (e.target.id === "signupUsername" && e.target.value.length > 0 && e.target.value.length < 8) {
-                setInputError(inputElement, "Username must be at least 8 characters");
+            if (e.target.id === "signupUsername" && e.target.value.length > 0 && e.target.value.length < 10) {
+                setInputError(inputElement, "Username must be at least 10 characters in length");
             }
         });
 
@@ -52,4 +49,4 @@ document.addEventListener("DOMContentLoaded", () => {
             clearInputError(inputElement);
         });
     });
-});
+})

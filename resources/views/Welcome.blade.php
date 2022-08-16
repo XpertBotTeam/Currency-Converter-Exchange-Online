@@ -1,7 +1,9 @@
 @extends('layouts.master')
 @section('title','Welcome')
 @section('content')
-
+<script>
+alert("Welcome to Our website, We hope you Enjoy!   :) @waledoss");
+</script>
     <i><img style="padding-left: 0px" class id="img"
     src=" https://img.freepik.com/premium-photo/blockchain-market-usd-currency-concept-with-blue-glowing-digital-dollar-symbol-abstract-technological-backdrop-with-world-map-waving-lines-3d-rendering_670147-524.jpg?size=626&ext=jpg" width="50%" height="250" alt="LOGOWEB">
     </i>

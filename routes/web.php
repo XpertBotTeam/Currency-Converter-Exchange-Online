@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
+//use Illuminate\Support\Str;
 
 use App\Http\Controllers\ChartController;
 use App\Http\Controllers\CurrencyExchangeController;
@@ -21,17 +22,30 @@ use App\Http\Controllers\ValuesController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function(){
+Route::get('/au', function(){
     return view ('authentication');
 });
-Route::get('/register', function(){
+// here we go
+Route::get('/hello', function(){
+    return view ('hello');
+});
+Route::get('/', function(){
+    return view ('index1');
+});
+Route::get('/changepassword', function(){
+    return view ('changepassword');
+});
+Route::get('/config', function(){
+    return view ('config');
+});
+Route::get('/forgetpassword', function(){
+    return view ('forgetpassword');
+});
+Route::get('/logout', function(){
+    return view ('logout');
+});
+Route::get('/r', function(){
     return view ('register');
-});
-Route::get('/login', function(){
-    return view ('login');
-});
-Route::get('/home', function(){
-    return view ('home');
 });
 Route::get('/welcome', function(){
     return view ('Welcome');
