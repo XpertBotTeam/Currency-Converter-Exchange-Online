@@ -1,6 +1,4 @@
 <?php
-    //Import PHPMailer classes into the global namespace
-    //These must be at the top of your script, not inside a function
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\SMTP;
     use PHPMailer\PHPMailer\Exception;
@@ -92,13 +90,13 @@
                         <form action="">
                             <input type="text" class="name" name="name" placeholder="Enter Your Name" value="<?php if (isset($_POST['submit'])) { echo $name; } ?>" required>
                             <input type="email" class="email" name="email" placeholder="Enter Your Email" value="<?php if (isset($_POST['submit'])) { echo $email; } ?>" required>
-                            <input type="password" class="password" name="password" placeholder="Enter Your Password" required>
+                            <input type="password" for="password" id="password" class="password" name="password" placeholder="Enter Your Password" required>
                             
                             <button name="submit" class="btn"  formaction="/" type="submit">Register</button>
                         
                         </form>
                         <div class="social-icons">
-                            <p style="padding-top: 5px">Have an account! <a href="/index1">Login</a>.</p>
+                            <p style="padding-top: 5px">Have an account! <a href="/">Login</a>.</p>
                         </div>
                     </div>
                 </div>

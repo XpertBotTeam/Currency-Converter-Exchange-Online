@@ -22,9 +22,6 @@ use App\Http\Controllers\ValuesController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/au', function(){
-    return view ('authentication');
-});
 // here we go
 Route::get('/hello', function(){
     return view ('hello');
@@ -34,9 +31,6 @@ Route::get('/', function(){
 });
 Route::get('/changepassword', function(){
     return view ('changepassword');
-});
-Route::get('/config', function(){
-    return view ('config');
 });
 Route::get('/forgetpassword', function(){
     return view ('forgetpassword');

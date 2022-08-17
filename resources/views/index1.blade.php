@@ -65,7 +65,7 @@
 
 </head>
 
-<body>
+<body id="l">
 
     <!-- form section start -->
     <section class="w3l-mockup-form">
