@@ -4,15 +4,10 @@
 <head>
     <title>Login Form !</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8" />
-    <meta name="keywords"
-        content="Login Form" />
-
+    <meta charset="UTF-8">
     <link href="//fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="/css/logs.css" type="text/css" media="all" />
-
-    <script src="https://kit.fontawesome.com/af562a2a63.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -26,9 +21,10 @@
                              <p> Many things you  should know, and track ! </p>
                         <form>
                             <input type="email" id="email"  placeholder="Email">
-                            <input type="password" id="password"  placeholder="New Password">
+                            <input type="password" id="password"  placeholder="Your Password">
+                            <!--
                             <p><a href="/forgetpassword" style="margin-bottom: 15px; display: block; text-align: right;">Forgot Password?</a></p>
-                            <button onclick="login()">Login</button>
+                            --><button onclick="login()">Login</button>
                         </form>
                                 <div class="social-icons">
                              <p>Create Account! <a href="/r">Register</a>. Go free<a href="/welcome"> Here!</a>.</p>

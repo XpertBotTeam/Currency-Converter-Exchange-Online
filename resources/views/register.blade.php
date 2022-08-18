@@ -21,9 +21,9 @@
                         <h2>Register Now</h2>
                         <p style="padding-bottom: 5px; color:green">Follow Daily online Currenceis and Crypto!</p>       
                         <form>
-                            <input type="text"  id="full_name" placeholder="Full name"  >
-                            <input type="email" id="email"  placeholder="Email"  >
-                            <input type="password" id="password"  placeholder="New Password" >
+                            <input type="text"  id="full_name" placeholder="Full name" required >
+                            <input type="email" id="email"  placeholder="Email" required  >
+                            <input type="password" id="password"  placeholder="Your New Password" required>
                         </form>
                         <button onclick="register()">Register</button>
                         <div class="social-icons">

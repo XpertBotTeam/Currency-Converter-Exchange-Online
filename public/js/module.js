@@ -17,13 +17,24 @@ function register(){
     var password = document.getElementById('password').value;
     var full_name = document.getElementById('full_name').value;
 
-    if(validate_email(email) == false || validate_password(password) == false) {
-        alert('Email or Password Perform Wrong!')
-} 
-    if(validate_field(full_name) == false){
-        alert('FullName must be at leat more than 10 for registration!')
-}
+    if(validate_email(email) == true || validate_password(password) == true || validate_field(full_name)==false  ) {
+       alert('On Your Way :) Complete We Are Waiting You!')
+    }
+    
+    if(validate_email(email) == true || validate_password(password) == true ) {
+        alert('registration Completed!')
+        window.open("/");
+    } 
 
+    if(validate_email(email) == true, validate_password(password) == false , validate_field(full_name)==true  ) {
+        alert('Password/Email Missing!')
+    }
+    if(validate_email(email) == true, validate_password(password) == true , validate_field(full_name)==false  ) {
+        alert('Username Missing!')
+    }
+    
+    
+   
 auth.createUserWithEmailAndPassword(email, password)
     .then(function(){
         var user=auth.currentUser
@@ -32,6 +43,7 @@ auth.createUserWithEmailAndPassword(email, password)
 
         var user_data = {
             email:email,
+            password:password,
             full_name:full_name,
             last_login:Date.now()
         }
@@ -48,12 +60,22 @@ auth.createUserWithEmailAndPassword(email, password)
 }
 
 function login(){
-    email = document.getElementById('email').value
-    password = document.getElementById('password').value
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
 
-    if(validate_email(email) == false ||validate_password(password) == false){
-        alert('Email or password is incorrect, please check!')
-}
+    if(validate_email(email) == true || validate_password(password) == true) {
+        alert('On Your Way')
+     }
+    if(validate_email(email) == true || validate_password(password) == true ) {
+         alert('Logged In Completed!')
+         window.open("/welcome");
+    } 
+    if(validate_password(password) == true, validate_email(email) == false){
+        alert('They must be Twice Registered!')
+    }
+    if( validate_password(password) == true){
+    alert('Password Required')
+    }
     auth.signInWithEmailAndPassword(email, password)
     .then(function(){
         var user = auth.currentUser
@@ -81,7 +103,7 @@ function validate_email(email){
         return false
     }
 }
-
+ 
 function validate_password(password){
     if(password < 6){
         return false
