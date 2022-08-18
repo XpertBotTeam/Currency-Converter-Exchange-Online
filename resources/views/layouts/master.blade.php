@@ -23,12 +23,16 @@
     <!-- For Gold -->
     <script type="text/javascript" src="https://www.bullionvault.com/banners/live_price_widget.js"></script>
     <!--   -->
+    <!-- FOR NAVBAR STYLING -->
     <script src="https://ok1static.oktacdn.com/assets/js/sdk/okta-signin-widget/2.16.0/js/okta-sign-in.min.js" type="text/javascript"></script>
     <link href="https://ok1static.oktacdn.com/assets/js/sdk/okta-signin-widget/2.16.0/css/okta-sign-in.min.css" type="text/css" rel="stylesheet"/>
     <link href="https://ok1static.oktacdn.com/assets/js/sdk/okta-signin-widget/2.16.0/css/okta-theme.css" type="text/css" rel="stylesheet"/>
+ <!--   -->
 
+  <!-- Title of the document  -->
     <title>@yield('Currency-Exchange')</title>
     <!--   -->
+
 </head>
 <body>
 <section>
@@ -48,7 +52,6 @@
             <ul class="navbar-nav" style="padding: 10px;padding-top:40px">
 
               <center>
-                <a style="padding-left: 30px;" class="nav-link active" aria-current="page" href="/"><u>Sign-Out</u></a>
              
                 <a style="padding-left: 30px" class="nav-link active" aria-current="page" href="/home"><u>Dashboard- Overview</u></a>
               
@@ -61,6 +64,9 @@
                 <a style="padding-left: 30px" class="nav-link" href="/Goldview"><u>Gold-Price</u></a>
               
                 <a style="padding-left: 30px" class="nav-link" href="/contact"><u>Contact US</u></a>
+
+                <a style="padding-left: 30px;" class="nav-link active" aria-current="page" href="/"><u>Sign-Out</u></a>
+                
               </center>
 
             </ul>

@@ -6,7 +6,7 @@
 <div class="circle">
         <center>
           <i><img class id="img"
-          src=" https://img.freepik.com/premium-photo/blockchain-market-usd-currency-concept-with-blue-glowing-digital-dollar-symbol-abstract-technological-backdrop-with-world-map-waving-lines-3d-rendering_670147-524.jpg?size=626&ext=jpg" width="50%" height="250" alt="LOGOWEB">
+          src="https://images.pexels.com/photos/534216/pexels-photo-534216.jpeg?auto=compress&cs=tinysrgb&w=600" width="50%" height="250" alt="LOGOWEB">
           </i>
         </center>
       </div>

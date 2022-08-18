@@ -9,7 +9,7 @@
               <header>Currency Converter</header>
               <form action="#">
                 <div class="amount">
-                  <p>Enter Amount</p>
+                  <b><p style="color:rgba(78, 42, 141, 0.991);padding-bottom: 5px;padding-right:63px">Enter Amount To Start Checking!</p></b>
                   <input type="text" value="1">
                 </div>
         
@@ -32,7 +32,7 @@
                 </div>
         
                 <div class="exchange-rate">Getting exchange rate...</div>
-                <button>Get Exchange value Rate</button>
+                <button> Get Exchange Value</button>
               </form>
             </div>
         
