@@ -8,6 +8,9 @@
 
     <link href="//fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/logs.css" >
+<script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-auth.js"></script>
 </head>
 <center>
 <body id="div">
@@ -37,9 +40,7 @@
     </form>
 </body>
 
-<script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-database.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-auth.js"></script>
+
 
 <script src="/js/module.js"></script>
 </center>

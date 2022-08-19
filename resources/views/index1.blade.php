@@ -9,6 +9,9 @@
 
     <link rel="stylesheet" href="/css/logs.css" type="text/css" media="all" />
 
+    <script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-auth.js"></script>
 </head>
 
 <body id="l">
@@ -36,9 +39,6 @@
     </section>
 </body>
 
-<script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-database.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-auth.js"></script>
 
 <script src="/js/module.js"></script>
 </html>
