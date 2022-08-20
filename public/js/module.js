@@ -7,10 +7,8 @@ const firebaseConfig = {
     appId: "1:618137597068:web:bff134188dddc89d4537a9"
 };
   
-firebase.initializeApp(firebaseConfig);
+initializeApp(firebaseConfig);
 
-const auth = firebase.auth()
-const database = firebase.database()
 
 function register(){
     var email = document.getElementById('email').value;
@@ -62,20 +60,22 @@ auth.createUserWithEmailAndPassword(email, password)
 function login(){
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
+    
 
-    if(validate_email(email) == true || validate_password(password) == true) {
+    if(validate_email(email).value == validate_email(email)  || validate_password(password).value == validate_password(password)) {
         alert('On Your Way')
      }
-    if(validate_email(email) == true || validate_password(password) == true ) {
+    if(validate_email(email) == true, validate_password(password) == true ) {
          alert('Logged In Completed!')
          window.open("/welcome");
     } 
     if(validate_password(password) == true, validate_email(email) == false){
-        alert('They must be Twice Registered!')
+        alert(' UnRegistered Account!')
     }
-    if( validate_password(password) == true){
-    alert('Password Required')
+    if( validate_password(password) == false){
+    alert('Password must be more than 6 character')
     }
+    
     auth.signInWithEmailAndPassword(email, password)
     .then(function(){
         var user = auth.currentUser

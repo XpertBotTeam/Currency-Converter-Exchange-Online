@@ -22,7 +22,6 @@
                         <form>
                             <input type="email" id="email"  placeholder="Email" >
                             <input type="password" id="password"  placeholder="Your Password">
-                            <?php if(isset($_SESSION["username"])); ?>
                             <button onclick="login()">Login</button>
                         </form>
                                 <div class="social-icons">

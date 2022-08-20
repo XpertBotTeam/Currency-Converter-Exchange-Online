@@ -20,7 +20,7 @@
                     <div class="content-wthree">
                         <h2>Register Now</h2>
                         <p style="padding-bottom: 5px; color:green">Follow Daily online Currenceis and Crypto!</p>       
-                        <form method="post" action="/registerfor">
+                        <form method="post" action="/action">
                            
                             <input type="text"  id="full_name" placeholder="Full name" required >
                             <input type="email" id="email"  placeholder="Email" required  >
