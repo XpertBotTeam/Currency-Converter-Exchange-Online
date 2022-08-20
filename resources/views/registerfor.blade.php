@@ -8,9 +8,6 @@
 
     <link href="//fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/logs.css" >
-<script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-database.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-auth.js"></script>
 </head>
 <center>
 <body id="div">
@@ -23,7 +20,8 @@
                     <div class="content-wthree">
                         <h2>Register Now</h2>
                         <p style="padding-bottom: 5px; color:green">Follow Daily online Currenceis and Crypto!</p>       
-                        <form>
+                        <form method="post" action="/registerfor">
+                           
                             <input type="text"  id="full_name" placeholder="Full name" required >
                             <input type="email" id="email"  placeholder="Email" required  >
                             <input type="password" id="password"  placeholder="Your New Password" required>
@@ -39,9 +37,6 @@
     </section>
     </form>
 </body>
-
-
-
 <script src="/js/module.js"></script>
 </center>
 </html>

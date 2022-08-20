@@ -26,8 +26,11 @@ use App\Http\Controllers\ValuesController;
 Route::get('/hello', function(){
     return view ('hello');
 });
+Route::get('/ch', function(){
+    return view ('checking');
+});
 Route::get('/', function(){
-    return view ('index1');
+    return view ('index11');
 });
 Route::get('/changepassword', function(){
     return view ('changepassword');
@@ -39,7 +42,7 @@ Route::get('/logout', function(){
     return view ('logout');
 });
 Route::get('/r', function(){
-    return view ('register');
+    return view ('registerfor');
 });
 Route::get('/welcome', function(){
     return view ('Welcome');
@@ -87,3 +90,8 @@ Route::resource('currency-exchange', 'CurrencyExchangeController');
 Route::resource('fields', 'FieldsController');
 Route::resource('owner', 'OwnerController');
 Route::resource('main', 'MainController');
+
+
+
+
+
