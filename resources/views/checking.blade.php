@@ -10,6 +10,8 @@
         <?php
         if(DB::connection()){
             echo "Successfully";
+        }else {
+            echo"oh no";
         }
         ?>
     </div>

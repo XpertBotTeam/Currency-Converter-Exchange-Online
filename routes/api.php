@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\DeviceController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -24,8 +24,17 @@ Route::get('/posts', function(){
         ]
         ]);
 });
-
-
+Route::get('/ser', function(){
+    return view('/Currencyapi');
+});
+Route::get('/hos', function(){
+    return view('/Hostor');
+});
+Route::get('/ava', function(){
+    return view('/available');
+});
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get("add",[DeviceController::class,'add']);

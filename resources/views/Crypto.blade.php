@@ -71,8 +71,11 @@
     <!-- Crypto Currencies Chart showing UP/DOWN -->
     
     <section style="padding-top: 50px;">
+        <script>
+            alert('API Interface With Crypto Tracking!')
+            </script>
     <center>
-      <h1 style="color: blue; padding-bottom: 10px;"> The values of most interested Crypto Currencies</h1>
+      <h1 style="color: rgb(16, 220, 192); padding-bottom: 10px;"> <b>The Values <small>of</small> Most Trending Crypto Currencies</b> <a style="color: rgb(16, 220, 192);" href="/morecrypto"><u>For More!</u></a></h1>
       </center>
       <center>
       <container class="container" style=" padding-bottom: 10px;">
@@ -82,7 +85,7 @@
                 <card class="asset-info">
                     <div class="title">
                         <img src="https://s3.us-east-2.amazonaws.com/nomics-api/static/images/currencies/btc.svg" width="15%"> 
-                        <h1>Bitcoin</h1>
+                        <h1> <small>BTC</small> Bitcoin</h1>
                     </div>
                     <div class="details">
                         <h2 class="asset-price" id="btcPrice"></h2>
@@ -95,7 +98,7 @@
               <card class="asset-info">
                   <div class="title">
                       <img src="https://s3.us-east-2.amazonaws.com/nomics-api/static/images/currencies/eth.svg" width="10%"> 
-                      <h1>Ethereum</h1>
+                      <h1> <small>eth</small> Ethereum</h1>
                   </div>
                   <div class="details">
                       <h2 class="asset-price" id="ethPrice"></h2>
@@ -108,7 +111,7 @@
                 <card class="asset-info">
                     <div class="title">
                         <img src="https://s3.us-east-2.amazonaws.com/nomics-api/static/images/currencies/atm.svg" width="15%"> 
-                        <h1>Cosmos</h1>
+                        <h1> <small> ATOM </small> Cosmos</h1>
                     </div>
                     <div class="details">
                         <h2 class="asset-price" id="atomPrice"></h2>
@@ -116,8 +119,10 @@
                 </card>
                 <canvas id="cosmosChart"></canvas>
             </cosmos>
-    
+    <!-- END Atom Currency -->
+    <!-- LITECOIN Currency -->
             
+    <!-- END LITECOIN Currency -->
         </cards>
         <script src="/js/currenciesv.js"></script>
       </container>

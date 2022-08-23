@@ -5,6 +5,9 @@
 
     <body style="padding-top: 0px;">
         <section id="section">
+          <script>
+            alert('Application Programming Interface')
+            </script>
             <div class="wrapper">
               <header>Currency Converter</header>
               <form action="#">

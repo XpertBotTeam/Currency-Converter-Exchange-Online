@@ -1,39 +1,39 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyCOP1kg1-MSa_Xlc617aP3_I23PwyBl3I4",
-    authDomain: "minenow-fde27.firebaseapp.com",
-    projectId: "minenow-fde27",
-    storageBucket: "minenow-fde27.appspot.com",
-    messagingSenderId: "618137597068",
-    appId: "1:618137597068:web:bff134188dddc89d4537a9"
+    apiKey: "AIzaSyApr2spnX_B6EDxkqV8NADZ_9JHo5mvyQ4",
+    authDomain: "auth-5534d.firebaseapp.com",
+    databaseURL: "https://auth-5534d-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "auth-5534d",
+    storageBucket: "auth-5534d.appspot.com",
+    messagingSenderId: "322797482160",
+    appId: "1:322797482160:web:b70447c6daf3333a56cb75"
 };
-  
-initializeApp(firebaseConfig);
-
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
 
 function register(){
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
     var full_name = document.getElementById('full_name').value;
 
-    if(validate_email(email) == true || validate_password(password) == true || validate_field(full_name)==false  ) {
+    if(validate_email(email).valueOf(email) == true || validate_password(password).valueOf(password) == true || validate_field(full_name).valueOf(full_name)==false  ) {
        alert('On Your Way :) Complete We Are Waiting You!')
     }
     
-    if(validate_email(email) == true || validate_password(password) == true ) {
+    if(validate_email(email).valueOf(email) == true || validate_password(password).valueOf(password) == true ) {
         alert('registration Completed!')
         window.open("/");
     } 
 
-    if(validate_email(email) == true, validate_password(password) == false , validate_field(full_name)==true  ) {
+    if(validate_email(email) == true.valueOf(email), validate_password(password).valueOf(password) == false , validate_field(full_name).valueOf(full_name)==true  ) {
         alert('Password/Email Missing!')
     }
-    if(validate_email(email) == true, validate_password(password) == true , validate_field(full_name)==false  ) {
+    if(validate_email(email).valueOf(email) == true, validate_password(password).valueOf(password) == true , validate_field(full_name).valueOf(full_name)==false  ) {
         alert('Username Missing!')
     }
     
     
    
-auth.createUserWithEmailAndPassword(email, password)
+auth.createUserWithEmailAndPassword(auth, email, password)
     .then(function(){
         var user=auth.currentUser
 
@@ -43,7 +43,6 @@ auth.createUserWithEmailAndPassword(email, password)
             email:email,
             password:password,
             full_name:full_name,
-            last_login:Date.now()
         }
         database_ref.child('users/'+ user.uid).set(user_data)
 
@@ -56,23 +55,19 @@ auth.createUserWithEmailAndPassword(email, password)
         alert(error_message)
     })
 }
-
 function login(){
+    
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
     
-
-    if(validate_email(email).value == validate_email(email)  || validate_password(password).value == validate_password(password)) {
-        alert('On Your Way')
-     }
-    if(validate_email(email) == true, validate_password(password) == true ) {
-         alert('Logged In Completed!')
+    if(validate_email(email).valueOf(register) == true, validate_password(password).valueOf(register) == true ) {
+         alert('Logged In Complete!')
          window.open("/welcome");
     } 
-    if(validate_password(password) == true, validate_email(email) == false){
+    if(validate_password(password).valueOf(register) == true, validate_email(email).valueOf(register) == false){
         alert(' UnRegistered Account!')
     }
-    if( validate_password(password) == false){
+    if( validate_password(password).valueOf(register) == false){
     alert('Password must be more than 6 character')
     }
     
@@ -81,7 +76,6 @@ function login(){
         var user = auth.currentUser
         var database_ref = database.ref()
         var user_data = {
-        last_login : Date.now()
         }
         database_ref.child('users/'+ user.uid).update(user_data)
         alert('Welcome to Our Website !! We are Happy to see you Here!')

@@ -56,6 +56,9 @@ Route::get('/checkform', function(){
 Route::get('/Crypto', function(){
     return view ('Crypto');
 });
+Route::get('/morecrypto', function(){
+    return view ('morecrypto');
+});
 Route::get('/ConverterAPP', function(){
     return view ('converterapp');
 });

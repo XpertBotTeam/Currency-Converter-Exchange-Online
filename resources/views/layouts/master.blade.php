@@ -53,7 +53,7 @@
 
               <center>
              
-                <a style="padding-left: 30px" class="nav-link active" aria-current="page" href="/home"><u>Dashboard- Overview</u></a>
+                <a style="padding-left: 81px" class="nav-link active" aria-current="page" href="/home"><u>Dashboard- Overview</u></a>
               
                 <a style="padding-left: 30px;" class="nav-link" href="/Crypto"><u>Crypto Online Values</u></a>
 
