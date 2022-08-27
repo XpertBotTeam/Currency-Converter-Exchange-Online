@@ -25,7 +25,7 @@
                             <button onclick="login()">Login</button>                           
                         </form>
                         <div class="row mx-gutters-2 mb-4">
-                            <a href="http://localhost/laravel_login_github/public/login/github/callback">
+                            <a href="/auth/github/redirect">
                                 <hr>
                                 <button id="git"  type="button" class="btn btn-block btn-github">
                                 <img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" height="18% " width="6%"> <i class="fa fa-github mr-2"> Github Account </i>
@@ -37,7 +37,7 @@
                             <hr>
                             <button id="gitt">
                                 <img src="https://th.bing.com/th/id/R.8e71e53cb7f522b77f08cafbd66827b4?rik=4IL1%2bSsxAuCETg&pid=ImgRaw&r=0" height="18% " width="6%">
-                            <a style="color: aliceblue"   href="https://0a41-106-212-124-50.ngrok.io/google/callback/" class="btn btn-google btn-user btn-block">
+                            <a style="color: aliceblue"   href="/auth/google/redirect" class="btn btn-google btn-user btn-block">
                                 <i class="fab fa-google fa-fw">Login with Google</i> 
                             </a>
                             </button>

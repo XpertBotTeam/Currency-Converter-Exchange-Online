@@ -13,6 +13,7 @@ use App\Http\Controllers\FieldsController;
 use App\Http\Controllers\GoldviewController;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\OwnerController;
+use App\Http\Controllers\SocialiteController;
 use App\Http\Controllers\ValuesController;
 
 use Illuminate\Support\Facades\Auth;
@@ -105,28 +106,8 @@ Route::resource('main', 'MainController');
 
 Auth::routes();
 
-Route::get('/index11', [App\Http\Controllers\HomeController::class, 'index'])->name('/');
+Route::get('/auth/{{provider}}/redirect', [SocialiteController::class,'redirect'])
+->where('provider', 'github|google');
 
-// Authenticated Routes
-Route::middleware('auth')->group(function(){
-    // User Management
-    Route::resource('users', App\Http\Controllers\UserController::class);
-
-    // To Update Users
-    Route::get('/users/status/{user_id}/{status_code}', [UserController::class, 'updateStatus'])->name('users.status.update');
-});
-
-Route::get('https://0a41-106-212-124-50.ngrok.io/google/callback/', function(){
-    return Socialite::driver('github')->redirect();
-});
-
-Route::get('https://0a41-106-212-124-50.ngrok.io/google/callback/', function(){
-    $user =  Socialite::driver('github')->user();
-
-    dd($user->getName(), $user->getEmail(), $user -> getId());
-});
-
-Route::prefix('google')->name('google.')->group( function(){
-    Route::get('login', [GoogleController::class, 'loginWithGoogle'])->name('login');
-    Route::any('callback', [GoogleController::class, 'callbackFromGoogle'])->name('callback');
-});
+Route::get('/auth/{{provider}}/callback', [SocialiteController::class,'callback'])
+->where('provider', 'github|google');
