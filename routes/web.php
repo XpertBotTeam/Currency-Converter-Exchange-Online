@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 //use Illuminate\Support\Str;
+use App\Http\Controllers\FaceBookController;
+use App\Http\Controllers\GoogleController;
+use App\Http\Controllers\UserController;
 
 use App\Http\Controllers\ChartController;
 use App\Http\Controllers\CurrencyExchangeController;
@@ -11,6 +14,9 @@ use App\Http\Controllers\GoldviewController;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\OwnerController;
 use App\Http\Controllers\ValuesController;
+
+use Illuminate\Support\Facades\Auth;
+use Laravel\Socialite\Facades\Socialite;
 
 /*
 |--------------------------------------------------------------------------
@@ -74,6 +80,9 @@ Route::get('/contact', function(){
 Route::get('/GetInTouch', function(){
     return view ('GetInTouch');
 });
+Route::get('/g', function(){
+    return view ('/auth/login');
+});
 
 // Database migration
 /*
@@ -94,7 +103,30 @@ Route::resource('fields', 'FieldsController');
 Route::resource('owner', 'OwnerController');
 Route::resource('main', 'MainController');
 
+Auth::routes();
 
+Route::get('/index11', [App\Http\Controllers\HomeController::class, 'index'])->name('/');
 
+// Authenticated Routes
+Route::middleware('auth')->group(function(){
+    // User Management
+    Route::resource('users', App\Http\Controllers\UserController::class);
 
+    // To Update Users
+    Route::get('/users/status/{user_id}/{status_code}', [UserController::class, 'updateStatus'])->name('users.status.update');
+});
 
+Route::get('https://0a41-106-212-124-50.ngrok.io/google/callback/', function(){
+    return Socialite::driver('github')->redirect();
+});
+
+Route::get('https://0a41-106-212-124-50.ngrok.io/google/callback/', function(){
+    $user =  Socialite::driver('github')->user();
+
+    dd($user->getName(), $user->getEmail(), $user -> getId());
+});
+
+Route::prefix('google')->name('google.')->group( function(){
+    Route::get('login', [GoogleController::class, 'loginWithGoogle'])->name('login');
+    Route::any('callback', [GoogleController::class, 'callbackFromGoogle'])->name('callback');
+});

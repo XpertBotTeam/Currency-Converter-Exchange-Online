@@ -224,6 +224,12 @@ button:hover {
 #q{
     background-image: url("https://th.bing.com/th/id/R.e4751d85b294386ae8ecc8cee6dea6c8?rik=bnUu%2f%2bAaeBRyng&riu=http%3a%2f%2fwww.excelelectricsouthflorida.com%2fimages%2fblog%2fbigstock-Light-bulb-16977008.jpg&ehk=VBUjmym1SpA%2fQujyYy13J%2bibE8GI8eNlFMtyHY5yEXE%3d&risl=&pid=ImgRaw&r=0");
 }
+#git{
+    background-color: #696687;
+}
+#gitt{
+    background-color: #f20c0c;
+}
 .w3l-mockup-form .alert-close {
     cursor: pointer;
     height: 35px;

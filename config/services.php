@@ -1,5 +1,7 @@
 <?php
 
+use GuzzleHttp\Client;
+
 return [
 
     /*
@@ -29,6 +31,17 @@ return [
         'key' => env('AWS_ACCESS_KEY_ID'),
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
+    ],
+
+    'github' => [
+        'client_id' => '5e2b69ecd57855750764',
+        'client_SECRET' => 'b287ea3dac37078c691b5148869f202bb37409e1',
+        'redirect' =>  'http://localhost/laravel_login_github/public/login/github/callback',
+    ],
+    'google' => [
+        'client_id' => '640637922490-4dksnskecol3tkjctq6qoeerosc4g7mm.apps.googleusercontent.com',
+        'client_secret' => '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', 
+        'redirect' => 'https://0a41-106-212-124-50.ngrok.io/google/callback/'
     ],
 
 ];
