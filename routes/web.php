@@ -109,5 +109,6 @@ Auth::routes();
 Route::get('/auth/{{provider}}/redirect', [SocialiteController::class,'redirect'])
 ->where('provider', 'github|google');
 
+
 Route::get('/auth/{{provider}}/callback', [SocialiteController::class,'callback'])
 ->where('provider', 'github|google');

@@ -38,10 +38,10 @@ return [
         'client_SECRET' => env ('GITHUB_CLIENT_SECRET'),
         'redirect' =>  'auth/github/callback',
     ],
+    
     'google' => [
         'client_id' => env ('GOOGLE_CLIENT_ID'),
         'client_SECRET' => env ('GOOGLE_CLIENT_SECRET'), 
         'redirect' => 'auth/google/callback'
-    ],
-
+    ]
 ];
